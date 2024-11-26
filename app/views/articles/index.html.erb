@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="d-flex justify-content-end align-items-center gap-3 mb-4">
+    <h1 class="mb-0 d-flex align-items-center">Articles</h1>
+    <a href="<%= new_article_path %>" class="btn btn-primary" style="margin-bottom: unset;">New Article</a>
+  </div>
+  <ul class="article-list">
+    <% @articles.each do |article| %>
+      <li class="article-item">
+        <a href="<%= article_path(article) %>" class="article-title"><%= article.title %></a>
+        <p class="article-content"><%= truncate(article.content, length: 150) %></p>
+        <div>
+          <%= link_to 'Read More', article_path(article), class: 'btn btn-primary' %>
+          <%= link_to 'Edit', edit_article_path(article), class: 'btn btn-secondary' %>
+          <%= link_to 'Delete', article_path(article), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>

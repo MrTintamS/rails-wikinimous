@@ -1,3 +1,117 @@
+/* ---------- Typographie globale ---------- */
+body {
+  font-family: "Roboto", sans-serif; /* Police moderne et lisible */
+  color: #333; /* Texte légèrement adouci */
+  background-color: #f8f8f8; /* Fond clair et élégant */
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+h1, h2 {
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Titre stylisé */
+}
+p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+/* ---------- Conteneur principal ---------- */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff; /* Fond blanc pour le contenu */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Ombre douce */
+  border-radius: 8px; /* Coins arrondis */
+}
+/* ---------- Liste des articles (index) ---------- */
+.article-list {
+  list-style: none;
+  padding: 0;
+}
+.article-item {
+  padding: 20px;
+  border: 1px solid #eaeaea; /* Légère bordure */
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.article-item:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Ombre au survol */
+  transform: translateY(-5px); /* Léger effet de survol */
+}
+/* ---------- Titres des articles ---------- */
+.article-title {
+  font-size: 1.4rem;
+  color: #007bff; /* Bleu moderne pour les liens */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.article-title:hover {
+  color: #0056b3;
+  text-decoration: underline; /* Souligné au survol */
+}
+/* ---------- Contenu des articles (extrait) ---------- */
+.article-content {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+/* ---------- Boutons ---------- */
+.btn {
+  display: inline-block;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: unset;
+}
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Léger déplacement */
+}
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+.btn-danger:hover {
+  background-color: #c82333;
+}
+/* ---------- Footer ---------- */
+.footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 40px;
+}
+
+h1, .btn {
+  line-height: 1;
+}
+
+.mb-3 {
+  margin-bottom: unset;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
